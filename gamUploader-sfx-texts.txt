@@ -1,0 +1,63 @@
+;Comment below contains SFX script commands
+
+Path=C:\gamUploader
+Setup=C:\WINDOWS\NOTEPAD.EXE C:\gamUploader\gamUploader.bat
+Title=gamUploader for ReplaceWithNameOfOrganisation
+Text
+{
+gamUploader is to be unpacked in C:\gamUploader<br>
+After installation, Notepad will open gamUploader.bat.<br>
+Replace your email address on line 3.<br>
+<br>
+USERADDRESS=ReplacewithYourEmailAddress<br>
+<br>
+Then close and save the file.<br>
+<br>
+This file <b>gamUploader.bat</b> is to be set as the default app for all files that are to be uploaded, and edited in Drive, by autoloading the first Chrome Profile (1), which should be your work account. Else the --profile-directory variable needs to be edited.<br>
+Depending on which file type is double clicked, the URL returned will be different.<br>
+Word documents, ending with docx or doc will open in Chrome with:<br>
+https://docs.google.com/document/d/%%i/edit<br>
+<br>
+Excel files, ending with xlsx or xls will open in Chrome with:<br>
+https://docs.google.com/spreadsheets/d/%%i/edit<br>
+<br>
+PowerPoint files, ending with pptx or ppt will open in Chrome with:<br>
+https://docs.google.com/presentation/d/%%i/edit<br>
+<br>
+Unknown/Unmapped filetypes that are associated with or dropped on this bat file will instead load this URL in Chrome:<br>
+https://drive.google.com/file/d/%%i/edit<br>
+That will show the content in a preview mode, if Drive is able to.<br>
+If not, it'll just say the file is incompatible with Drive, and must be downloaded to view or edit.<br>
+<br>
+So, to make this work, you should right-click, or double-click, on each of your MS Office file types, and choose <b>Open With</b>, browsing to and selecting C:\gamUploader\gamUploader.bat, and set it to always open.<br>
+}
+License=gamUploader info
+{
+gamUploader was created by me (Kim Nilsson) in collaboration<br>
+with GAMADV-XTD3 developer Ross Scroggs.<br>
+<br>
+Kim Nilsson<br>
+No Substitute<br>
+https://wheretofind.me/@NoSubstitute<br>
+<br>
+PRIVACY POLICY<br>
+You are in full control of all the data. The script is only accessing data you yourself have access to. No data is sent anywhere, except between you and Google. No matter what you do, I will never gain access to any of your data.<br>
+All data reading and writing is done by you on your own account.<br>
+<br>
+If you want you can PayPal me.<br>
+https://www.paypal.me/NoSubstitute
+<br>
+<br>
+gam.exe that is included with this package is from<br>
+GAMADV-XTD3, and requires v5.23.06 or higher.<br>
+<br>
+GAMADV-XTD3 is a free, open source command line tool for Google Workspace (formerly G Suite) Administrators to manage domain and user settings quickly and easily.<br>
+GAMADV-XTD3 can be found here,<br>
+https://github.com/taers232c/GAMADV-XTD3<br>
+<br>
+This package is prepared for ReplaceWithNameOfOrganisation, ReplaceWithCurrentDate.
+It contains JSON & Oauth files specific for ReplaceWithNameOfOrganisation.<br>
+gam uses those files with a limited service account to upload the files.<br>
+The limited account is associated with ServiceAccount@Your.Domain,<br>
+an admin account managing services and apps connected to ReplaceWithNameOfOrganisation.
+}
