@@ -4,6 +4,9 @@ The purpose of gamUploader is to automatically upload, and open MS Office files 
 
 gamUploader was created by me (Kim Nilsson), in collaboration with GAMADV-XTD3 developer Ross Scroggs.
 
+Go to the wiki for instructions on how to prepare and package gamUploader.<br>
+https://github.com/NoSubstitute/gamUploader/wiki
+
 Kim Nilsson<br>
 No Substitute<br>
 https://wheretofind.me/@NoSubstitute<br>
