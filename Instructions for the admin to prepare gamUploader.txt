@@ -1,0 +1,53 @@
+Instructions for the admin to prepare the gamUploader package before distributing to users.
+
+You must already have a working GAMADV-XTD3 setup, with at least version 5.25.xx.
+It doesn't matter if you run your admin GAMADV-XTD3 in Windows, Linux, Mac or Cloud Shell, but the gamUploader.exe itself is built for 64-bit Windows 10, so your users need to be on a recent Windows 10, unless another version of gamUploader is released, compatible with other OSs.
+
+A. Preparing a limited oauth2service.json.
+
+1. Create a new dir in $HOME/.gam/ (%USERPROFILE%\.gam\ in Windows, or wherever you have your .gam dir) for your limited service account.
+    Call it "limited". For example /Users/YourName/.gam/limited. One of these example commands should work.
+    mkdir $HOME/.gam/limited
+    OR
+    mkdir %USERPROFILE%\.gam\limited
+
+2. Open .gam/gam.cfg (not the one here in the gamUploader dir!) and create a new section [limited] in your .gam/gam.cfg with references to your main account, but pointing to the limited dir. Save.
+    [limited]
+    customer_id = YourCustomerId
+    domain = YourDomain
+    config_dir = limited
+ 
+3. Then put COPIES of your current gam files in the limited dir. They are needed there initially so you can use gam to create the lesser access.
+    client_secrets.json
+    oauth2.txt
+
+4. Select and save the new section. This is important! So you don't accidentally overwrite your main files. (I always recommend having a backup of your main files.)
+    gam select limited save
+
+5. Create a separate service account to run the gamUploader function. This will create a new oauth2service.json file in the limited dir. Make the name obvious, so you know what it is for. Follow the instructions on screen.
+    gam add svcacct admin YourAdmin@EmailAddress saname "xyz-limited" sadisplayname "XYZ Limited"
+
+6. Update the service accounts's access. Follow the instructions on screen. Authorise the account in your browser.
+    gam user SomeUserIn@Your.Domain update serviceaccount scope https://www.googleapis.com/auth/drive
+
+
+B. Preparing a limited oauth2.txt.
+1. To create the limited oauth2.txt we run the oauth create process and select only the scope we want. It can be done by using this oneliner. Follow the instructions on screen. This will overwrite your oauth2.txt, keeping only limited access.
+    gam oauth create admin YourAdmin@EmailAddress scopes https://www.googleapis.com/auth/admin.directory.user.readonly
+
+2. Verify the service account is working as intended. You should see PASS on the scopes.
+    gam user SomeUserIn@Your.Domain check serviceaccount
+
+
+C. Preparing the gamUploader package.
+1. Copy the new limited oauth2.txt and oauth2service.json files to the gamUploader dir.
+
+2. You are now ready to distribute the gamUploader package, and you can either push the Office file association through the MDM of your choice, or instruct the user to run the .reg file in the association dir after unpacking gamUploader.
+
+3. Screenshotted versions of the Office file icons are included with the package in the dir gamUploader\icons, and referred to in the .reg file.
+
+4. I have found it easy to use the SFX feature of WinRAR to create a package for users, as it will allow me to open the gamUploader.bat after copying the files to C:\gamUploader, so the user can set the proper email address. You may of course choose any tool you wish.
+
+5. You will most likely need to provide some instructions for your users, and I have included my default instructions in the file Instructions for users.txt, which is actually a copy of the RAR SFX command script, and can be inserted there in its entirety. Use and edit as you like, but keep most of the licence content referring to me as is. Do edit the last bit which refers to your organisation.
+
+6. It's perfectly fine to give your users less information, as some of what I have included is fairly technical, and mainly for your purposes.

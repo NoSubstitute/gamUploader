@@ -1,0 +1,60 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\.docx]
+@="WinWord.docx"
+"Content Type"="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\.pptx]
+@="PowerPoint.pptx"
+"Content Type"="application/vnd.openxmlformats-officedocument.presentationml.presentation"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\.xlsx]
+@="Excel.xlsx"
+"Content Type"="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WinWord.docx]
+@="Microsoft Word Dokument"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WinWord.docx\DefaultIcon]
+@="C:\\gamUploader\\icons\\Winword.ico"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WinWord.docx\shell]
+@=""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WinWord.docx\shell\open]
+@=""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WinWord.docx\shell\open\command]
+@="\"C:\\gamUploader\\gamUploader.bat\" \"%1\""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\PowerPoint.pptx]
+@="Microsoft Powerpoint Presentation"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\PowerPoint.pptx\DefaultIcon]
+@="C:\\gamUploader\\icons\\Powerpoint.ico"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\PowerPoint.pptx\shell]
+@=""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\PowerPoint.pptx\shell\open]
+@=""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\PowerPoint.pptx\shell\open\command]
+@="\"C:\\gamUploader\\gamUploader.bat\" \"%1\""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Excel.xlsx]
+@="Microsoft Excel Bok"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Excel.xlsx\DefaultIcon]
+@="C:\\gamUploader\\icons\\Excel.ico"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Excel.xlsx\shell]
+@=""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Excel.xlsx\shell\open]
+@=""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Excel.xlsx\shell\open\command]
+@="\"C:\\gamUploader\\gamUploader.bat\" \"%1\""

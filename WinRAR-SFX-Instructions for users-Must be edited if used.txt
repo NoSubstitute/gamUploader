@@ -1,0 +1,73 @@
+;Comment below contains SFX script commands
+
+Path=C:\gamUploader
+Setup=C:\WINDOWS\NOTEPAD.EXE C:\gamUploader\gamUploader.bat
+Setup=C:\gamUploader\association\gamUploader_association.reg
+SetupCode
+Title=gamUploader for ReplaceWithNameOfOrganisation
+Text
+{
+<b>You need to read all of these instructions to know what you need to do to make gamUploader work.</b><br><br>
+gamUploader will be unpacked in C:\gamUploader<br>
+After the installation, Notepad will open gamUploader.bat.<br>
+Replace your email address on line 3.<br>
+<br>
+It looks like this.
+<br>
+USERADDRESS=ReplacewithYour@EmailAddress<br>
+<br>
+Then close and save the file.<br>
+<br>
+The <b>gamUploader.bat</b> file is to be set as the default app for all files that are to be uploaded, and edited in Drive, by autoloading the first Chrome Profile (Default), which should be your work account. Else the PROFILE variable on line 11 in the gamUploader.bat also needs to be edited.<br>
+<br>
+So, to make this work, we need to associate gamUploader.bat with your Office files.<br
+That can be done Manually or Automatically.<br><br>
+<b>Completely Automatically:</b> After you close the gamUploader.bat file, you will be asked if you want to allow the C.\gamUploader\association\gamUploader_association.reg to change the registry. Press Ok to accept. Done!<br>
+<b>Automatically:</b> Double click the file C:\gamUploader\associations\gamUploader_association.reg and accept the changes in the registry.<br>
+<b>Manually:</b> Right-click, or double-click, on one of each of your MS Office file types (Word, Excel, Powerpoint), and choose <b>Open With</b>, browsing to and selecting C:\gamUploader\gamUploader.bat, and set it to always open.<br>
+<br>
+In the future, depending on which file type is double clicked, the URL returned will be different.<br><br>
+Word documents, ending with docx or doc will open with:<br<
+https://docs.google.com/document/d/%%i/edit
+<br><br>
+Excel files, ending with xlsx or xls will open with:<br>
+https://docs.google.com/spreadsheets/d/%%i/edit
+<br><br>
+PowerPoint files, ending with pptx or ppt will open with:<br>
+https://docs.google.com/presentation/d/%%i/edit
+<br><br>
+Unknown/Unmapped filetypes that are associated with or dropped on this bat file will instead load this URL:<br>
+https://drive.google.com/file/d/%%i/edit
+<br><br>
+That will show the content in a preview mode, if Drive is able to. If not, it'll just say the file is incompatible with Drive, and must be downloaded to view or edit.<br>
+}
+License=gamUploader info
+{
+<b>Welcome to gamUploader!</b><br><br>
+The purpose of gamUploader is to automatically upload, and edit MS Office files in Drive.
+<br><br>gamUploader was created by me (Kim Nilsson) in collaboration with GAMADV-XTD3 developer Ross Scroggs.<br>
+<br>
+Kim Nilsson<br>
+No Substitute<br>
+https://wheretofind.me/@NoSubstitute<br>
+<br>
+PRIVACY POLICY<br>
+No data is sent anywhere, except between you and Google.
+No matter if you use this or create a copy of my scripts, I will never gain access to any of your data.<br>
+If you want you can https://www.paypal.me/NoSubstitute
+<br><br>
+gamUploader.exe included with this package is based on GAMLite, a special version of GAMADV-XTD3, which only contains the code to perform the actions described above.<br>
+GAMADV-XTD3 is a free, open source command line tool for Google Workspace (formerly G Suite) Administrators to manage domain and user objects quickly and easily.<br>
+GAMADV-XTD3 can be found here, https://github.com/taers232c/GAMADV-XTD3
+<br><br>
+GAMLite base package can be found here, https://github.com/taers232c/GAMLite
+<br><br>
+This package is prepared for<br>
+ReplaceWithNameOfOrganisation, ReplaceWithCurrentDate.<br>
+It contains JSON & Oauth files specific for ReplaceWithNameOfOrganisation.<br>
+<br>
+gamUploader uses those files with a limited service account to upload the MS Office files you double-click to Drive and open them correctly in Chrome.<br>
+The limited account is associated with<br>
+ServiceAccount@Your.Domain,<br>
+an admin account managing services and apps connected to ReplaceWithNameOfOrganisation.
+}
