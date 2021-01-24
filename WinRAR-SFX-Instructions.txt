@@ -24,7 +24,7 @@ So, to make this work, we need to associate gamUploader.bat with your Office fil
 That can be done Manually or Automatically.<br><br>
 <b>Completely Automatically:</b> After you close the gamUploader.bat file, you will be asked if you want to allow the C.\gamUploader\association\gamUploader_association.reg to change the registry. Press Ok to accept. Done!<br>
 <b>Automatically:</b> Double click the file C:\gamUploader\associations\gamUploader_association.reg and accept the changes in the registry.<br>
-<b>Manually:</b> Right-click, or double-click, on one of each of your MS Office file types (Word, Excel, Powerpoint), and choose <b>Open With</b>, browsing to and selecting C:\gamUploader\gamUploader.bat, and set it to always open.<br>
+<b>Manually:</b> Right-click, or double-click, on one of each of your MS Office file types (Word, Excel, Powerpoint), and choose <b>Open With</b>, browse to and select C:\gamUploader\gamUploader.bat, and set it to always open.<br>
 <br>
 In the future, depending on which file type is double clicked, the URL returned will be different.<br><br>
 Word documents, ending with docx or doc will open with:<br<
