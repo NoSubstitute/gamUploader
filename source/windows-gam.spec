@@ -11,7 +11,7 @@ extra_files = [
 #    ('sites-v1.json', '.')
     ]
 a = Analysis(['gamUploader.py'],
-             pathex=['C:\\gamUploader-main\\source'],
+             pathex=['.'],
              datas=extra_files,
              hiddenimports=[],
              hookspath=None,
