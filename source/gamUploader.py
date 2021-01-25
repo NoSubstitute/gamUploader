@@ -38,7 +38,7 @@ except IOError as e:
 
 body = {'name': os.path.basename(filename)}
 body['mimeType'] = mimetypes.guess_type(filename)[0]
-print(body)
+# print(body)
 if body['mimeType'] is None:
   body['mimeType'] = 'application/octet-stream'
 try:
