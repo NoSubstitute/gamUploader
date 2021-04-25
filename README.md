@@ -4,19 +4,18 @@ The purpose of gamUploader is to automatically upload, and open MS Office files 
 
 gamUploader was created by me (Kim Nilsson), in collaboration with GAMADV-XTD3 developer Ross Scroggs.
 
-Go to the wiki for instructions on how to prepare and package gamUploader.<br>
-https://github.com/NoSubstitute/gamUploader/wiki
+Go to the [wiki for instructions](https://github.com/NoSubstitute/gamUploader/wiki) on how to prepare and package gamUploader.<br>
 
 Kim Nilsson<br>
 No Substitute<br>
-https://wheretofind.me/@NoSubstitute<br>
-<br>
-PRIVACY POLICY<br>
-No data is sent anywhere, except between you and Google.<br>
-No matter if you use this or create a copy of my scripts, I will never gain access to any of your data.<br>
-If you want you can https://www.paypal.me/NoSubstitute
-<br><br>
-gamUploader.exe included with this package is based on GAMLite, a special version of GAMADV-XTD3, which only contains the code to perform the actions described above. GAMADV-XTD3 is a free, open source command line tool for Google Workspace (formerly G Suite) Administrators to manage domain and user objects quickly and easily.<br>
-GAMADV-XTD3 can be found here, https://github.com/taers232c/GAMADV-XTD3
-<br><br>
-GAMLite base package can be found here, https://github.com/taers232c/GAMLite
+https://wheretofind.me/@NoSubstitute
+
+[PRIVACY POLICY](https://tools.no-substitute.com/pp)
+
+tl;dr - No data is sent anywhere, except between you and Google.
+
+If you want you can [PayPal me](https://www.paypal.me/NoSubstitute/25USD)
+
+gamUploader.exe included with this package is based on [GAMLite](https://github.com/taers232c/GAMLite), a special version of [GAMADV-XTD3](https://github.com/taers232c/GAMADV-XTD3), which only contains the code to perform the actions described above. GAMADV-XTD3 is a free, open source command line tool for Google Workspace (formerly G Suite) Administrators to manage domain and user objects quickly and easily.
+
+The included gamUploader.exe is just the python script compiled with pyinstaller, [as described in the wiki](https://github.com/NoSubstitute/gamUploader/wiki/Compile-your-own-gamUploader-(optional)), and is definitely virus free, regardless what your AV says.
