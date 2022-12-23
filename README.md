@@ -6,6 +6,9 @@ gamUploader was created by me (Kim Nilsson), in collaboration with GAMADV-XTD3 d
 
 Go to the [wiki for instructions](https://github.com/NoSubstitute/gamUploader/wiki) on how to prepare and package gamUploader.<br>
 
+### Please, if you know how to OAuth to a local binary, do send me a PR with how to change my code!
+I would love to make it more secure, and not have to use service account access.
+
 Kim Nilsson<br>
 No Substitute<br>
 https://wheretofind.me/@NoSubstitute
