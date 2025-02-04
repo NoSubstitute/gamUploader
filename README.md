@@ -1,6 +1,6 @@
 # Welcome to gamUploader!
 
-The purpose of gamUploader is to automatically upload, and open MS Office files in the right Google Workspace app in Chrome.
+The purpose of gamUploader is to automatically upload, and open MS Office files in the right Google Workspace app in Chrome on a Windows computer.
 
 gamUploader was created by me (Kim Nilsson), in collaboration with GAMADV-XTD3 developer Ross Scroggs.
 
